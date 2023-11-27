@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="background">
+
+<div class="container">
+
+<div class="flex-box">
+
+
+
+<div class="parent">
+
+
+    <div class="box-1">
+
+        <i class="fa-solid fa-paper-plane"></i>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui iusto quidem impedit amet, tempore aut natus velit aliquam laboriosam voluptate saepe quas optio in minima eaque dolores rerum, distinctio adipisci.</p>
+
+
+    </div>
+
+    <div class="box-2">
+
+        <i class="fa-regular fa-lightbulb"></i>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui iusto quidem impedit amet, tempore aut natus velit aliquam laboriosam voluptate saepe quas optio in minima eaque dolores rerum, distinctio adipisci.</p>
+
+
+    </div>
+
+
+</div>
+
+
+
+<div class="grand-parent">
+
+
+
+    <div class="box-3">
+        <i class="fa-brands fa-youtube"></i> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero facilis enim quos. Iure recusandae assumenda molestiae labore id sint, fugiat voluptatum sunt ullam, maiores, autem pariatur voluptatem nostrum vel?</p>
+
+
+    </div>
+
+    <div class="box-4">
+        <img src="png image cap.png" alt="">
+
+
+
+    </div>
+
+    <div class="box-5">
+        <i class="fa-brands fa-fly"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero facilis enim quos. Iure recusandae assumenda molestiae labore id sint, fugiat voluptatum sunt ullam, maiores, autem pariatur voluptatem nostrum vel?</p>
+    </div>
+
+
+
+
+</div>
+
+<div class="child">
+
+
+    <div class="box-6">
+
+        
+<i class="fa-solid fa-plane"></i>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde illum sed nisi animi ducimus tempore rem expedita, delectus corrupti cupiditate aliquid repellat voluptatibus provident recusandae, quasi sapiente at quas!</p>
+
+    </div>
+    <div class="box-7">
+
+
+        <i class="fa-solid fa-tag"></i> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde illum sed nisi animi ducimus tempore rem expedita, delectus corrupti cupiditate aliquid repellat voluptatibus provident recusandae, quasi sapiente at quas!</p>
+
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="progress-bar">
+    <div class="progress-icon">
+
+        <div class="progress">
+
+            <span class="loader"></span>
+            <button class="start btn">Start</button>
+            <button class="stop btn">Stop</button>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
+
+
+
+    <script>
+const startBtn = document.querySelector(".start")
+const stopBtn = document.querySelector(".stop")
+const background = document.querySelector(".background")
+const loader = document.querySelector(".loader")
+
+
+
+
+let animationRunning = false;
+
+function startAnimaion (){
+    loader.classList.remove("stop-animation")
+    animationRunning = true;
+}
+
+function stopAnimaion (){
+    loader.classList.add("stop-animation")
+    animationRunning = false;
+}
+
+startBtn.addEventListener("click" ,function(){
+    startAnimaion()
+})
+
+stopBtn.addEventListener("click" ,function(){
+    stopAnimaion()
+})
+
+function  toggleBackground (){
+    if(background.style.backgroundColor === "white"){
+        background.style.backgroundColor = "black"
+        background.style.color = "white"
+
+
+    }else{
+        background.style.backgroundColor = "white"
+        background.style.color = "black"
+    }
+}
+loader.addEventListener("animationiteration",function(){
+    toggleBackground()
+})
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- 
+<i class="fa-solid fa-paper-plane"></i>
+
+<i class="fa-regular fa-lightbulb"></i>
+
+
+<i class="fa-brands fa-youtube"></i> 
+<i class="fa-brands fa-fly"></i>
+
+
+<i class="fa-solid fa-plane"></i>
+
+<i class="fa-solid fa-tag"></i>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
